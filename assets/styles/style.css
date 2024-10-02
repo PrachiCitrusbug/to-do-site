@@ -1,0 +1,107 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+li, a{
+    text-decoration: none;
+}
+
+button{
+    outline:none;
+    border:none;
+}
+
+button:hover, a:hover{
+    cursor: pointer;
+}
+
+body{
+    background: linear-gradient(135deg, #BD73C6, #E6781C);
+    color: white;
+    font-family: 'poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+}
+
+header, form{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1 {
+    font-size: 3rem;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    background-color: white;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.todo-button{
+    margin-left: 1rem;
+    transition: all 0.3s ease;
+}
+
+.todo-button:hover{
+    background-color: #dbbddf;
+}
+
+img {
+    width: 20px;
+    height: 20px;
+}
+
+.todo-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.todo-list > li > .todo-div{
+    background-color: white;
+    color: black;
+    padding: 1rem 2rem;
+    width: 25vw;
+    display: grid;
+    grid-template-columns: 86% 8% 6%;
+}
+
+.todo-div > p{
+    overflow-wrap: break-word;
+    padding-right: 1rem;
+    font-size: 1.3rem;
+}
+
+input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+    accent-color: green;
+    justify-self: center;
+    align-self: center;
+}
+
+.remove-button{
+    justify-self: center;
+    align-self: center;
+}
+
+p.completed{
+    text-decoration: line-through;
+}
+/* input[type='checkbox']:checked{
+    background-color: #E6781C;
+    color: white;
+} */
+
